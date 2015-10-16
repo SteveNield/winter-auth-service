@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winter.Auth.Service", "Winter.Auth.Service\Winter.Auth.Service.csproj", "{0254282C-0504-436B-A168-CF7C4D8AF46D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winter.Auth.Repository", "Winter.Auth.Repository\Winter.Auth.Repository.csproj", "{126D8193-96F3-4253-AD79-B519A4EC79C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winter.Auth.Model", "Winter.Auth.Model\Winter.Auth.Model.csproj", "{9330B1DF-BB14-468A-8CE5-A18AE6D8BCAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winter.Auth.Service.Test.Unit", "Winter.Auth.Service.Test.Unit\Winter.Auth.Service.Test.Unit.csproj", "{FEC36411-9554-4FFC-88C2-BD184E23033F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winter.Auth.Service.Test.Integration", "Winter.Auth.Service.Test.Integration\Winter.Auth.Service.Test.Integration.csproj", "{01FBD4FB-5B13-4779-905E-74A0F005D8A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0254282C-0504-436B-A168-CF7C4D8AF46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0254282C-0504-436B-A168-CF7C4D8AF46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0254282C-0504-436B-A168-CF7C4D8AF46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0254282C-0504-436B-A168-CF7C4D8AF46D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{126D8193-96F3-4253-AD79-B519A4EC79C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126D8193-96F3-4253-AD79-B519A4EC79C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126D8193-96F3-4253-AD79-B519A4EC79C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126D8193-96F3-4253-AD79-B519A4EC79C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9330B1DF-BB14-468A-8CE5-A18AE6D8BCAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9330B1DF-BB14-468A-8CE5-A18AE6D8BCAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9330B1DF-BB14-468A-8CE5-A18AE6D8BCAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9330B1DF-BB14-468A-8CE5-A18AE6D8BCAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEC36411-9554-4FFC-88C2-BD184E23033F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEC36411-9554-4FFC-88C2-BD184E23033F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEC36411-9554-4FFC-88C2-BD184E23033F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEC36411-9554-4FFC-88C2-BD184E23033F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01FBD4FB-5B13-4779-905E-74A0F005D8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01FBD4FB-5B13-4779-905E-74A0F005D8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01FBD4FB-5B13-4779-905E-74A0F005D8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01FBD4FB-5B13-4779-905E-74A0F005D8A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
