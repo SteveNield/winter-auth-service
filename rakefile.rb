@@ -34,6 +34,6 @@ build :publish => [:restore] do |b|
 end
 
 desc "Transforming Test Config"
-build :transformTestConfig, :environment do
+task :transformTestConfig, :environment do
     FileUtils.cp "#{INTEGRATION_TEST_PROJECT}/config/app.#{environment}.config", "#{INTEGRATION_TEST_PROJECT}/bin/Release/#{INTEGRATION_TEST_PROJECT}.dll.config"
 end
