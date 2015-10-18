@@ -5,7 +5,6 @@ PACKAGES_DIR = "packages"
 NUGET_DIR = "c:/program files (x86)/nuget/nuget.exe"
 WEB_PROJECT_BIN_DIR = "bin/"
 INTEGRATION_TEST_PROJECT = "winter.auth.service.test.integration"
-ENVIRONMENT_CONFIG = ""
 
 task :default => [:build]
 
@@ -35,6 +34,6 @@ build :publish => [:restore] do |b|
 end
 
 desc "Transforming Test Config"
-build :transformTestConfig do
-    FileUtils.cp "#{INTEGRATION_TEST_DIR}/config/app.#{ENVIRONMENT_CONFIG}.config", "#{INTEGRATION_TEST_DIR}/bin/Release/#{INTEGRATION_TEST_PROJECT}.dll.config"
+build :transformTestConfig, :environment do
+    FileUtils.cp "#{INTEGRATION_TEST_PROJECT}/config/app.#{environment}.config", "#{INTEGRATION_TEST_PROJECT}/bin/Release/#{INTEGRATION_TEST_PROJECT}.dll.config"
 end
