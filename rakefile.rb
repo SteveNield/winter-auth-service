@@ -4,6 +4,8 @@ SOLUTION_DIR = "winter.auth.service.sln"
 PACKAGES_DIR = "packages"
 NUGET_DIR = "c:/program files (x86)/nuget/nuget.exe"
 WEB_PROJECT_BIN_DIR = "bin/"
+INTEGRATION_TEST_PROJECT = "winter.auth.service.test.integration"
+ENVIRONMENT_CONFIG = ""
 
 task :default => [:build]
 
@@ -30,4 +32,9 @@ build :publish => [:restore] do |b|
   b.prop 'PipelineDependsOnBuild', 'false'      # makes it so you can package without building first
   b.prop 'webprojectoutputdir', '../output/'       # the directory to write the published files to
   b.prop 'outdir', WEB_PROJECT_BIN_DIR          # the directory of your bin files for the project
+end
+
+desc "Transforming Test Config"
+build :transformTestConfig do
+    FileUtils.cp "#{INTEGRATION_TEST_DIR}/config/app.#{ENVIRONMENT_CONFIG}.config", "#{INTEGRATION_TEST_DIR}/bin/Release/#{INTEGRATION_TEST_PROJECT}.dll.config"
 end

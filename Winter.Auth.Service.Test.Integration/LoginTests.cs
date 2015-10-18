@@ -13,7 +13,7 @@ namespace Winter.Auth.Service.Test.Integration
         [Test]
         public void Can_Return_Response_With_Token_For_Valid_Credentials()
         {
-            var client = new WebClient {BaseAddress = "http://localhost/auth/"};
+            var client = new WebClient {BaseAddress = ConfigurationManager.AppSettings["Auth.Service.Endpoint"] };
             client.Headers.Add(HttpRequestHeader.ContentType, "application/json");
             var userCredentials = "{ Username: 'TEST', Password: 'TEST' }";
 
