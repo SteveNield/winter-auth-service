@@ -3,7 +3,7 @@ require 'albacore'
 SOLUTION_DIR = "winter.auth.service.sln"
 PACKAGES_DIR = "packages"
 NUGET_DIR = "c:/program files (x86)/nuget/nuget.exe"
-WEB_PROJECT_BIN_DIR = "winter.auth.service/bin/"
+WEB_PROJECT_BIN_DIR = "bin/"
 
 task :default => [:build]
 
@@ -28,6 +28,6 @@ build :publish => [:restore] do |b|
   b.prop 'Configuration', 'Release'
   b.prop 'UseWPP_CopyWebApplication', 'true'    # applies the web.config transforms for the build config
   b.prop 'PipelineDependsOnBuild', 'false'      # makes it so you can package without building first
-  b.prop 'webprojectoutputdir', 'output/'       # the directory to write the published files to
+  b.prop 'webprojectoutputdir', '../output/'       # the directory to write the published files to
   b.prop 'outdir', WEB_PROJECT_BIN_DIR          # the directory of your bin files for the project
 end
