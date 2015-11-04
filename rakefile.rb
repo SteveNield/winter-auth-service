@@ -35,5 +35,5 @@ end
 
 desc "Transforming Test Config"
 task :transformTestConfig, :environment do |t, args|
-    FileUtils.cp "#{INTEGRATION_TEST_PROJECT}/config/app.#{args.environment}.config", "#{INTEGRATION_TEST_PROJECT}/bin/Release/#{INTEGRATION_TEST_PROJECT}.dll.config"
+    FileUtils.cp "#{INTEGRATION_TEST_PROJECT}/config/app.#{args.environment}.config", "#{INTEGRATION_TEST_PROJECT}/bin/#{INTEGRATION_TEST_PROJECT}.dll.config"
 end
