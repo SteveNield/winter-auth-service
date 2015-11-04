@@ -1,13 +1,12 @@
 ﻿using System.Web;
 using System.Web.Http;
-using System.Web.Mvc;
 using Castle.MicroKernel.Resolvers.SpecializedResolvers;
 using Castle.Windsor;
 using Castle.Windsor.Installer;
 using Winter.Auth.Repository;
-using Winter.Auth.Service.WindsorPlumbing;
 using Winter.Core.Auth;
 using Winter.Core.DependencyInversion;
+using Winter.Core.DependencyInversion.WebApi;
 
 namespace Winter.Auth.Service
 {

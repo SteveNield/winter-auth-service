@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="config\App.Integration.config" />
-    <None Include="config\App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

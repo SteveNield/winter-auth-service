@@ -62,11 +62,15 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Winter.Core.Auth, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Winter.Core.1.0.44\lib\Winter.Core.Auth.dll</HintPath>
+      <HintPath>..\packages\Winter.Core.1.0.48\lib\Winter.Core.Auth.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Winter.Core.DependencyInversion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Winter.Core.1.0.44\lib\Winter.Core.DependencyInversion.dll</HintPath>
+      <HintPath>..\packages\Winter.Core.1.0.48\lib\Winter.Core.DependencyInversion.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Winter.Core.DependencyInversion.WebApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Winter.Core.1.0.48\lib\Winter.Core.DependencyInversion.WebApi.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

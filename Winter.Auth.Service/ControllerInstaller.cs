@@ -4,7 +4,7 @@ using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using Winter.Auth.Service.Models;
 
-namespace Winter.Auth.Service.WindsorPlumbing
+namespace Winter.Auth.Service
 {
     public class ControllerInstaller : IWindsorInstaller
     {

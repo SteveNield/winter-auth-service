@@ -107,11 +107,15 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="Winter.Core.Auth, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Winter.Core.1.0.44\lib\Winter.Core.Auth.dll</HintPath>
+      <HintPath>..\packages\Winter.Core.1.0.48\lib\Winter.Core.Auth.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Winter.Core.DependencyInversion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Winter.Core.1.0.44\lib\Winter.Core.DependencyInversion.dll</HintPath>
+      <HintPath>..\packages\Winter.Core.1.0.48\lib\Winter.Core.DependencyInversion.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Winter.Core.DependencyInversion.WebApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Winter.Core.1.0.48\lib\Winter.Core.DependencyInversion.WebApi.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -138,16 +142,13 @@
     <Compile Include="Models\IDtoValidator.cs" />
     <Compile Include="Models\LoginAttempt.cs" />
     <Compile Include="Models\LoginAttemptValidator.cs" />
-    <Compile Include="WindsorPlumbing\ControllerInstaller.cs" />
+    <Compile Include="ControllerInstaller.cs" />
     <Compile Include="Controllers\ILoginController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WindsorPlumbing\WindsorCompositionRoot.cs" />
-    <Compile Include="WindsorPlumbing\WindsorDependencyScope.cs" />
-    <Compile Include="WindsorPlumbing\WindsorResolver.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

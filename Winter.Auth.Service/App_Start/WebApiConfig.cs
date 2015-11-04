@@ -2,7 +2,8 @@
 using System.Web.Http.Dispatcher;
 using Castle.Windsor;
 using Newtonsoft.Json;
-using Winter.Auth.Service.WindsorPlumbing;
+using Winter.Core.Auth;
+using Winter.Core.DependencyInversion.WebApi;
 
 namespace Winter.Auth.Service
 {
@@ -17,7 +18,7 @@ namespace Winter.Auth.Service
             config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
             config.Formatters.JsonFormatter.SerializerSettings.TypeNameHandling = TypeNameHandling.Objects;
             config.Formatters.JsonFormatter.SerializerSettings.Formatting = Formatting.Indented;
-
+            
             RegisterControllerActivator(container);
         }
 
